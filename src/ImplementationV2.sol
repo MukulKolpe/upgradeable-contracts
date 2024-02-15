@@ -21,7 +21,9 @@ contract ImplementationV2 is
         __UUPSUpgradeable_init();
     }
 
-    function setNumber(uint256 _number) external {}
+    function setNumber(uint256 _number) external {
+        number = _number;
+    }
 
     function getNumber() external view returns (uint256) {
         return number;
